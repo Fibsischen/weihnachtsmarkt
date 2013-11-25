@@ -1,0 +1,100 @@
+<html xmlns="http://www.w3.org/1999/xhtml" > 
+<head>
+<title>Weihnachtsmarktfinder</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<link href="css/demo.css" rel="stylesheet" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/evol.colorpicker.js" type="text/javascript"></script>
+</head>
+
+<body>   
+
+<div class="demoPanel" style="width:400px">
+    <div id="Überschrift1">Weihnachtsmarktfinder</div>
+    <div id="Überschrift2">Mögen sie Glühwein?</div>
+    <input type="radio" name="Gluewein" value="Ja">  Ja<br>
+    <input type="radio" name="Gluewein" value="Nein">  Nein<br>
+</div>
+
+
+<script>
+
+$(document).ready(function(){
+
+	// Change theme
+    $('.css').click(function(){ 
+        $('#jquiCSS').attr('href','http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/themes/'+this.innerHTML+'/jquery-ui.css');
+    });
+	
+	// Events demo
+	$('#cp1').colorpicker({color:'#8db3e2'})
+		.on('change.color', function(evt, color){
+			$('#title').attr('style','color:'+color);
+		})
+		.on('mouseover.color', function(evt, color){
+			$('#title').attr('style','background-color:'+color);
+		})
+	
+	$('#getVal').click(function(){
+		alert($('#cp1').colorpicker("val"));
+	})
+	$('#setVal').click(function(){
+		$('#cp1').colorpicker("val",'#31859b');
+	})
+	$('#enable').click(function(){
+		$('#cp1').colorpicker("enable");
+	})
+	$('#disable').click(function(){
+		$('#cp1').colorpicker("disable");
+	})
+	$('#destroy1').click(function(){
+		var v=$('#cp1').colorpicker("destroy") ;
+	})	
+	
+	// Instanciate colorpickers
+    $('#cpBoth').colorpicker();
+    $('#cpDiv').colorpicker({color:'#31859b'});
+    $('#cpFocus').colorpicker({showOn:'focus'});
+    $('#cpButton').colorpicker({showOn:'button'});
+    $('#cpOther').colorpicker({showOn:'none'});
+	$('#show').click(function(evt){
+		evt.stopImmediatePropagation();
+		$('#cpOther').colorpicker("showPalette");
+	})
+	
+	// No color indicator
+	$('#noIndColor').colorpicker({
+		displayIndicator: false
+	});
+
+	// French colorpicker
+	$('#frenchColor').colorpicker({
+		strings: "Couleurs de themes,Couleurs de base,Plus de couleurs,Moins de couleurs,Palette,Historique,Pas encore d'historique."
+	});
+
+	$('#getVal2').click(function(){
+		alert($('#cpDiv').colorpicker("val"));
+	})
+	$('#setVal2').click(function(){
+		$('#cpDiv').colorpicker("val",'#31859b');
+	})
+	$('#enable2').click(function(){
+		$('#cpDiv').colorpicker("enable");
+	})
+	$('#disable2').click(function(){
+		$('#cpDiv').colorpicker("disable");
+	})
+	$('#destroy2').click(function(){
+		var v=$('#cpDiv').colorpicker("destroy");
+	})
+
+});
+
+</script>
+
+<div class="footer" style="clear:both" >&#169; 2013 Kathleen Wiesner</div> 
+
+</body>
+
+</html>
