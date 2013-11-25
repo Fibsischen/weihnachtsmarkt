@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../demo.css">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Unbenanntes Dokument</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+<body>
+<!-- TemplateBeginEditable name="ContentRegion" -->
+<div class="demoPanel" style="width:400px">
+  <div id="Überschrift1">Weihnachtsmarktfinder</div>
+  
+  <div id="content_weihnachtsmarkt"></div>
+
+  <div id="footer_Auswertung">
+    <input type="button" name="Button_Auswertung" value="Auswertung" onclick="auswerten()">
+  </div>
+</div>
+  <!-- TemplateEndEditable -->
+</body>
+</html>

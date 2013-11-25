@@ -28,12 +28,19 @@ a {
 	.demoPanel #Überschrift1 {
 	font-size: large;
 	font-weight: bold;
-	padding-bottom: 5px;
+	/* [disabled]padding-bottom: 5px; */
 }
+.demoPanel #Frage {
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
     .demoPanel #Überschrift2 {
 	font-size: medium;
 	font-weight: normal;
-	padding-bottom: 5px;
-	padding-top: 5px;
+	/* [disabled]padding-bottom: 5px; */
+	/* [disabled]padding-top: 5px; */
 }
-    
+.demoPanel #footer_Auswertung {
+	margin-top: 20px;
+}
