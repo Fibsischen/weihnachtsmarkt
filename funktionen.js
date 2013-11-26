@@ -24,7 +24,7 @@ function auswerten() {
 	else
 	{
 		$("#example-widget-container").load("auswertung.html");
-		window.setTimeout(werteaus(ergebnisse), 2000);
+		window.setTimeout(function() {werteaus(ergebnisse)}, 500);
 	}
 }
 
@@ -39,7 +39,7 @@ function werteaus(ergebnisse) {
 	allTextLines = csv.split(/\r\n|\n/);
 	var fldHeading = [];
 	var weihnachtsmärkte = new Array();
-	alert("JA");
+	//console.log("JA");
 	//erstmal alles in Array schmeißen
 	for (index = 0; index < allTextLines.length; ++index) {
 		fldHeading = allTextLines[index].split(';');
