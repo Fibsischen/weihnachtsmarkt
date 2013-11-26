@@ -44,10 +44,34 @@ a {
 .demoPanel #footer_Auswertung {
 	margin-top: 20px;
 }
-.demoPanel #content_weihnachtsmarkt #Frage {
+.demoPanel #content_weihnachtsmarkt  {
 	margin-top: 20px;
 
 }
+.demoPanel #footer_Auswertung input[name="Button_Auswertung"] {
+	visibility: hidden;
+}
+
 .demoPanel #content_weihnachtsmarkt table img   {
 	width: 150px;
+	margin: 5px;
+}
+.demoPanel #content_weihnachtsmarkt table {
+	width: 100%;
+}
+.demoPanel #content_weihnachtsmarkt table td {
+	border-bottom-width: medium;
+}
+.demoPanel #content_weihnachtsmarkt table tr th[scope="row"] {
+	border-bottom-width: medium;
+	border-left-width: medium;
+	border-top-color: #CCC;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #666;
+}
+
+
+.demoPanel #content_weihnachtsmarkt table tr .Name_Platz {
+	padding: 5px;
 }
