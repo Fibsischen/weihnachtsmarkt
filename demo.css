@@ -44,3 +44,10 @@ a {
 .demoPanel #footer_Auswertung {
 	margin-top: 20px;
 }
+.demoPanel #content_weihnachtsmarkt #Frage {
+	margin-top: 20px;
+
+}
+.demoPanel #content_weihnachtsmarkt table img   {
+	width: 150px;
+}
