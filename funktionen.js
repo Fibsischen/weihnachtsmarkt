@@ -29,7 +29,7 @@ function auswerten() {
 }
 
 function zurueck() {
-	window.history.back();
+	$("#example-widget-container").load("fragebogen.html");
 }
 
 function werteaus(ergebnisse) {
