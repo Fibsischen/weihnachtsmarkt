@@ -15,11 +15,14 @@
 </head>
 <body>
 <!-- InstanceBeginEditable name="ContentRegion" -->
-<div class="demoPanel" style="width:500px">
+<div class="demoPanel" style="width:600px"><img src="solingen-silhouette.jpg" width="450" height="135" alt="Silhouette">
   <div id="Überschrift1">Weihnachtsmarktfinder</div>
   <div id="content_weihnachtsmarkt">
   	<div id="Frage">    	
-        <div id="Überschrift2">Welche Art von Weihnachtsmarkt bevorzugen Sie? (maximal 3)</div>
+        <div id="Überschrift2">
+          <p>Welche Art von Weihnachtsmarkt bevorzugen Sie? <img src="412010_9310_Christbaum.jpg.bmp" alt="Christbaum"><br>
+          (maximal 3)</p>
+        </div>
         <input type="checkbox" name="Art" value="traditionell">Traditionell <br>
         <input type="checkbox" name="Art" value="modern">Modern  <br>
         <input type="checkbox" name="Art" value="gemuetlich">Gemütlich  <br>
@@ -31,7 +34,8 @@
     </div>
   </div>
   <div id="footer_Auswertung">
-    <input type="button" name="Button_Auswertung2" value="Auswertung" onclick="auswerten(); return false">
+  <div class="button" onClick="auswerten(); return false">Auswertung</div>
+    <!--<input type="button" name="Button_Auswertung2" value="Auswertung" onclick="auswerten(); return false">-->
   </div>
 </div>
 <!-- InstanceEndEditable -->
