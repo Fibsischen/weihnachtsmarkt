@@ -123,11 +123,11 @@ function werteaus(ergebnisse) {
 	$(".Link_Platz4_N").attr('href',weihnachtsmärkte[3]["Url"]);
 	$(".Link_Platz5_N").attr('href',weihnachtsmärkte[4]["Url"]);	
 	
-	$(".Link_Platz1_I").attr('href',weihnachtsmärkte[0]["Url"]);
-	$(".Link_Platz2_I").attr('href',weihnachtsmärkte[1]["Url"]);
-	$(".Link_Platz3_I").attr('href',weihnachtsmärkte[2]["Url"]);
-	$(".Link_Platz4_I").attr('href',weihnachtsmärkte[3]["Url"]);
-	$(".Link_Platz5_I").attr('href',weihnachtsmärkte[4]["Url"]);
+	$(".Link_Platz1_I").attr('href',weihnachtsmärkte[0]["Bild_Link"]);
+	$(".Link_Platz2_I").attr('href',weihnachtsmärkte[1]["Bild_Link"]);
+	$(".Link_Platz3_I").attr('href',weihnachtsmärkte[2]["Bild_Link"]);
+	$(".Link_Platz4_I").attr('href',weihnachtsmärkte[3]["Bild_Link"]);
+	$(".Link_Platz5_I").attr('href',weihnachtsmärkte[4]["Bild_Link"]);
 	
 	$(".Bild_Platz1").attr('src',weihnachtsmärkte[0]["Bild_Link"]);
 	$(".Bild_Platz2").attr('src',weihnachtsmärkte[1]["Bild_Link"]);

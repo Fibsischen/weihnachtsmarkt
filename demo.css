@@ -11,7 +11,7 @@ a {
 }
 .demoPanel{
 	float: left;
-	border: 5px solid #A7C8E2;
+	border: 5px solid #8bcfde;
 	padding: 10px;
 	width: 212px;
 	border-radius: 10px;
@@ -94,16 +94,20 @@ a {
 .button {
 	max-width: 80px;
 	padding: 10px 20px;
-	background: #1e5799;
-	background: -moz-linear-gradient(top, #1e5799 0%, #2989d8 38%, #7db9e8 100%);
-	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(38%,#2989d8), color-stop(100%,#7db9e8));
-	background: -webkit-linear-gradient(top, #1e5799 0%,#2989d8 38%,#7db9e8 100%);
-	background: -o-linear-gradient(top, #1e5799 0%,#2989d8 38%,#7db9e8 100%);
-	background: -ms-linear-gradient(top, #1e5799 0%,#2989d8 38%,#7db9e8 100%);
-	background: linear-gradient(to bottom, #1e5799 0%,#2989d8 38%,#7db9e8 100%);
+	background: #95b800;
+	background: -moz-linear-gradient(top, #c3ec1e 0%, #95b800 38%, #86944d 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c3ec1e), color-stop(38%,#95b800), color-stop(100%,#86944d));
+	background: -webkit-linear-gradient(top, #c3ec1e 0%,#95b800 38%,#86944d 100%);
+	background: -o-linear-gradient(top, #c3ec1e 0%,#95b800 38%,#86944d 100%);
+	background: -ms-linear-gradient(top, #c3ec1e 0%,#95b800 38%,#86944d 100%);
+
+	background: linear-gradient(to bottom, #c3ec1e 0%,#95b800 38%,#86944d 100
+%);
 
 
-   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+
+
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c3ec1e', endColorstr='#7db9e8',GradientType=0 );
 	color: #fff;
 	text-align: center;
 	-moz-border-radius: 10px;
